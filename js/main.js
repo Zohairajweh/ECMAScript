@@ -1,6 +1,5 @@
 
 
-// find()
 
 var myArray=['Hello,Word',2,3,true,5,null,38];
 var myVlaue=myArray.find(function(element){return element>4;});
@@ -141,3 +140,48 @@ return myAnser;
     // replace method
     const replaceString='greeting,program';
     console.log(replaceString.replace(/program/,'word'));
+
+
+    {
+
+        const myBlocknestedVar=38;
+
+    }
+    // console.log(myBlocknestedVar);
+    myorganizeName:{
+//we can organize some Code in here ,and control,and control scop of let/const
+let myBlocknestedVar =55;
+myBlocknestedVar++
+console.log(myBlocknestedVar);
+
+/**
+ * Classes.
+ * *** CHECK OUR IMPORT, THAT'S HOW WE'RE ACCESSING THIS!
+ */
+
+class Movie {
+    constructor( name, genre, year ) {
+        this.name = name;
+        this.genre = genre;
+        this.year = year;
+    }
+    showPoster() { // This is a method! We can name them as we'd like.
+        const info = `
+            MOVIE INFO
+            ==========
+            Name: ${this.name}
+            Genre: ${this.genre}
+            Year: ${this.year}
+        `;
+        return info;
+    }
+}
+
+const tron = new Movie( 'Disney\'s TRON', 'Adventure', 1982 );
+const dragonheart = new Movie( 'Dragonheart', 'Medieval Fantasy', 1996 );
+const godfather = new Movie( 'Godfather II', 'Action/Thriller', 1974 );
+
+console.log( tron );
+console.log( dragonheart );
+console.log( godfather );
+    }
