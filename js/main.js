@@ -43,7 +43,7 @@ var reduceResult=myArray.reduce(function(accumulator,curretval){
 });
 console.log(reduceResult);
 
-console.log([ 1,2,3,4].reduce(function(a,v) {return  a+v;}));
+console.log([ 1,2,3,4].reduce(function(a,v) {return  a*v;}));
 
 
 var x=3;
@@ -59,5 +59,32 @@ console.log('myVar='+myVar)
 for(let myNewVar=0;myNewVar<10; myNewVar++){
     console.log('for loop itteration...')
     console.log('myVar='+myNewVar)
-
     }
+
+    const myObj={
+        name:'henry'
+    ,age:18
+    }
+    myObj.name='sandy';
+    console.log(myObj);
+
+    // classic function declartion
+
+    function myfunction(a,b){
+
+        return Number(a)+Number(b);
+      
+    }
+    console.log(myfunction(3,7));
+//ES6 style
+
+    myfunction=(a,b)=>Number(a)+Number(b);
+    console.log(myfunction(3,8));
+
+// bigger function
+    myOtherfunction=(a,b) =>{
+const myAnser=Number(a)+Number(b);
+return myAnser;
+
+    }    
+    console.log(myOtherfunction(3,9));
