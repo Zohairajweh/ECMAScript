@@ -44,3 +44,20 @@ var reduceResult=myArray.reduce(function(accumulator,curretval){
 console.log(reduceResult);
 
 console.log([ 1,2,3,4].reduce(function(a,v) {return  a+v;}));
+
+
+var x=3;
+let y=7;
+const z=36;
+
+for(var myVar=0;myVar<10; myVar++){
+console.log('for loop itteration...')
+
+}
+console.log('myVar='+myVar)
+
+for(let myNewVar=0;myNewVar<10; myNewVar++){
+    console.log('for loop itteration...')
+    console.log('myVar='+myNewVar)
+
+    }
