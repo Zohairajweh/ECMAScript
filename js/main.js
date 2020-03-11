@@ -130,3 +130,14 @@ return myAnser;
     const newArray=['Hello',',','world','!'];
     console.log(newArray);
     console.log(...newArray);//brought the values in the array togethet as one(sapce-separated) streing 
+
+    const abunchofNum=[5,10,36,58];
+    console.log(addallNums(5,10,36,58));
+    console.log(addallNums(...abunchofNum)); //spreading an argrument
+
+    const myTestString='greeting,program';
+    console.log(myTestString.search(/program/i));
+
+    // replace method
+    const replaceString='greeting,program';
+    console.log(replaceString.replace(/program/,'word'));
