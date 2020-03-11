@@ -19,8 +19,28 @@ console.log(findAnIndex);
 
 // entries()
 var paring=myArray.entries();
+console.log(paring); //Return an iterator.
 console.log(paring.next().value);
 console.log(paring.next().value);
 console.log(paring.next().value);
 console.log(paring.next().value);
 console.log(paring.next().value);
+console.log(paring.next().value);
+
+var fromArray=Array.from('ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+console.log(fromArray);
+
+
+var fromArray2=Array.from('Hello,Word');
+console.log(fromArray2);
+
+var Filtered=myArray.filter(function(element){return element>4;});
+console.log(Filtered);
+
+var reduceResult=myArray.reduce(function(accumulator,curretval){
+
+    return accumulator +curretval;
+});
+console.log(reduceResult);
+
+console.log([ 1,2,3,4].reduce(function(a,v) {return  a+v;}));
