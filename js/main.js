@@ -88,3 +88,22 @@ return myAnser;
 
     }    
     console.log(myOtherfunction(3,9));
+
+
+
+    // function default parameter vaues
+// we can set defaluts ,to prevent errors in case nothing gets passed in for a parameter
+    addNums = (x=0,y=0)=>x+y;
+    console.log(addNums());
+
+
+
+    // rest paramter
+
+    findHighNum=(...args)=>{
+    console.log(args);
+    return args;
+    }
+    
+    addallNums=(...num)=>num.reduce((a,v)=> a+v);
+     console.log(addallNums(64,6,10));   
