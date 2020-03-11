@@ -118,9 +118,15 @@ return myAnser;
 
 
 // template literals
-    const helloVar='Helo,world';
+    const helloVar='Hello,world';
     
     const sampleName='sam';
     const myNewstring=` hey ther ,my name is ${sampleName};'i'd like to 
     give you a big :"${helloVar}"!!`;
     console.log(myNewstring);
+
+// spread Opertator
+
+    const newArray=['Hello',',','world','!'];
+    console.log(newArray);
+    console.log(...newArray);//brought the values in the array togethet as one(sapce-separated) streing 
