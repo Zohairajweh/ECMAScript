@@ -90,7 +90,18 @@ return myAnser;
     console.log(myOtherfunction(3,9));
 
 
+    addallNums=(...num)=>num.reduce((a,v)=> a+v);
+    console.log(addallNums(64,6,10));   
 
+    findHighNums = ( minNum = 0, ...args/* Named whatever we want. But needs the three dots! */ ) => { // ...args will capture any number of arguments that we pass!
+        minNum = Number( minNum );
+        if ( minNum === NaN ) minNum = 0;
+        const highNums = args.filter( ( element ) => element > minNum );
+        // console.log( args ); // It can be called by the name we had inbetween our parenthesis.
+        return highNums;
+    }
+    console.log( findHighNums( 5, 2, 20, 50, 3, 0, 10, 28, -508 ) );
+    
     // function default parameter vaues
 // we can set defaluts ,to prevent errors in case nothing gets passed in for a parameter
     addNums = (x=0,y=0)=>x+y;
@@ -104,6 +115,12 @@ return myAnser;
     console.log(args);
     return args;
     }
+
+
+// template literals
+    const helloVar='Helo,world';
     
-    addallNums=(...num)=>num.reduce((a,v)=> a+v);
-     console.log(addallNums(64,6,10));   
+    const sampleName='sam';
+    const myNewstring=` hey ther ,my name is ${sampleName};'i'd like to 
+    give you a big :"${helloVar}"!!`;
+    console.log(myNewstring);
